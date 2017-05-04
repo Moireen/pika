@@ -1,0 +1,2 @@
+use_mmap
+block_cache_size

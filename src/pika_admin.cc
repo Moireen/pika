@@ -213,10 +213,16 @@ void CompactCmd::DoInitial(PikaCmdArgsType &argv, const CmdInfo* const ptr_info)
     res_.SetRes(CmdRes::kWrongNum, kCmdNameCompact);
     return;
   }
+  if (argv.size() > 1 && argv[1] == "sync") {
+	  sync_ = true;
+  }
+  else {
+	  sync_ = false;
+  }
 }
 
 void CompactCmd::Do() {
-  nemo::Status s = g_pika_server->db()->Compact(nemo::kALL);
+  nemo::Status s = g_pika_server->db()->Compact(nemo::kALL, sync_);
   if (s.ok()) {
     res_.SetRes(CmdRes::kOk);
   } else {

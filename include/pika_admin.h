@@ -78,6 +78,7 @@ public:
   }
   virtual void Do();
 private:
+  bool sync_;
   virtual void DoInitial(PikaCmdArgsType &argvs, const CmdInfo* const ptr_info);
 };
 

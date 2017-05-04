@@ -61,6 +61,7 @@ LIBS = -lpthread \
 	   -lz \
 	   -lbz2 \
 	   -lsnappy \
+	   -llz4 \
 	   -lrt
 
 NEMO = $(THIRD_PATH)/nemo/output/lib/libnemo.a
