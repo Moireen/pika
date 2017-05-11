@@ -76,6 +76,14 @@ int PikaConf::Load()
   //
   // Immutable Sections
   //
+
+  // more options for memory controll
+  GetConfInt("block-cache-size-mb", &block_cache_size_mb_);
+  if (block_cache_size_mb_ < 0) {
+	  block_cache_size_mb_ = 0;
+  }
+  GetConfBool("allow-mmap-reads", &allow_mmap_reads_);
+
   GetConfInt("port", &port_);
   GetConfStr("log-path", &log_path_);
   GetConfStr("db-path", &db_path_);
@@ -179,6 +187,10 @@ int PikaConf::Load()
 }
 
 int PikaConf::ConfigRewrite() {
+  // more options for memory controll
+  SetConfInt("block-cache-size-mb", block_cache_size_mb_);
+  SetConfInt("allow-mmap-reads", allow_mmap_reads_);
+
   SetConfInt("port", port_);
   SetConfInt("thread-num", thread_num_);
   SetConfInt("sync-thread-num", sync_thread_num_);

@@ -735,7 +735,20 @@ static void EncodeInt32(std::string *dst, const int32_t v) {
 
 void ConfigCmd::ConfigGet(std::string &ret) {
   std::string get_item = config_args_v_[1];
-  if (get_item == "port") {
+  // more options for memory controll
+  if (get_item == "block-cache-size-mb") {
+        ret = "*2\r\n";
+        EncodeString(&ret, "block-cache-size-mb");
+        EncodeInt32(&ret, g_pika_conf->block_cache_size_mb());
+  } else if (get_item == "allow-mmap-reads") {
+		ret = "*2\r\n";
+		EncodeString(&ret, "allow-mmap-reads");
+		if (g_pika_conf->allow_mmap_reads()) {
+			EncodeString(&ret, "yes");
+		} else {
+			EncodeString(&ret, "no");
+		}
+  } else if (get_item == "port") {
       ret = "*2\r\n";
       EncodeString(&ret, "port");
       EncodeInt32(&ret, g_pika_conf->port());
@@ -880,7 +893,17 @@ void ConfigCmd::ConfigGet(std::string &ret) {
     EncodeString(&ret, "slaveof");
     EncodeString(&ret, g_pika_conf->slaveof());
   } else if (get_item == "*") {
-    ret = "*72\r\n";
+    ret = "*76\r\n";
+    // more options for memory controll
+    EncodeString(&ret, "block-cache-size-mb");
+    EncodeInt32(&ret, g_pika_conf->block_cache_size_mb());
+	EncodeString(&ret, "allow-mmap-reads");
+	if (g_pika_conf->allow_mmap_reads()) {
+		EncodeString(&ret, "yes");
+	} else {
+		EncodeString(&ret, "no");
+	}
+
     EncodeString(&ret, "port");
     EncodeInt32(&ret, g_pika_conf->port());
     EncodeString(&ret, "thread-num");

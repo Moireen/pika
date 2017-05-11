@@ -52,6 +52,10 @@ PikaServer::PikaServer() :
   // Create nemo handle
   nemo::Options option;
 
+  //more options for memory controll
+  option.block_cache_size_mb = g_pika_conf->block_cache_size_mb();
+  option.allow_mmap_reads = g_pika_conf->allow_mmap_reads();
+
   option.write_buffer_size = g_pika_conf->write_buffer_size();
   option.target_file_size_base = g_pika_conf->target_file_size_base();
   option.max_background_flushes = g_pika_conf->max_background_flushes();
@@ -355,6 +359,11 @@ void PikaServer::DeleteSlave(int fd) {
  */
 bool PikaServer::ChangeDb(const std::string& new_path) {
   nemo::Options option;
+
+  //more options for memory controll
+  option.block_cache_size_mb = g_pika_conf->block_cache_size_mb();
+  option.allow_mmap_reads = g_pika_conf->allow_mmap_reads();
+
   option.write_buffer_size = g_pika_conf->write_buffer_size();
   option.target_file_size_base = g_pika_conf->target_file_size_base();
   if (g_pika_conf->compression() == "none") {
@@ -1132,6 +1141,11 @@ bool PikaServer::FlushAll() {
   db_.reset();
 
   nemo::Options option;
+
+  //more options for memory controll
+  option.block_cache_size_mb = g_pika_conf->block_cache_size_mb();
+  option.allow_mmap_reads = g_pika_conf->allow_mmap_reads();
+
   option.write_buffer_size = g_pika_conf->write_buffer_size();
   option.target_file_size_base = g_pika_conf->target_file_size_base();
   if (g_pika_conf->compression() == "none") {

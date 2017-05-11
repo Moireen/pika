@@ -24,6 +24,9 @@ public:
   ~PikaConf()             { pthread_rwlock_destroy(&rwlock_); }
 
   // Getter
+  int block_cache_size_mb() { RWLock l(&rwlock_, false); return block_cache_size_mb_; }
+  bool allow_mmap_reads() { RWLock l(&rwlock_, false); return allow_mmap_reads_; }
+
   int port()              { RWLock l(&rwlock_, false); return port_; }
   std::string slaveof() {RWLock l(&rwlock_, false); return slaveof_;}
   int thread_num()        { RWLock l(&rwlock_, false); return thread_num_; }
@@ -185,6 +188,11 @@ private:
   //
   // Critical configure items
   //
+
+  // more options for memory controll
+  int block_cache_size_mb_;
+  bool allow_mmap_reads_;
+
   int target_file_size_base_;
   int binlog_file_size_;
 
