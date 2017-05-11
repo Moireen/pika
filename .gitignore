@@ -37,3 +37,22 @@ output/
 # third party
 gdb.txt
 tags
+
+# IDEs
+.project
+.cproject
+.settings/
+
+# test
+test/pika/
+test/pika-on-terarkdb/
+test/*.result
+
+# dbs
+pika-without-terarkdb/
+pika-on-terarkdb/
+
+#unmodified submodules
+third/pink
+third/glog
+
