@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 if [ -z "$1" ]; then
-	echo usage $0 \[-t\] -m num_mget_keys -n num_requests -c num_clients -d value_size -f values_filename set/get
+	echo usage $0 \[-t\] -m num_mget_keys -n num_requests -c num_clients -k key_filename -v value_filename set/get
         exit 0
 fi
 
@@ -20,14 +20,14 @@ while getopts ":m:n:c:d:h:f:t" optname; do
                 "c")
                         clients=$OPTARG
                         ;;
-                "d")
-                        value_size=$OPTARG
+                "k")
+                        key_filename=$OPTARG
                         ;;
                 "m")
                         mgets=$OPTARG
                         ;;
-		"f")
-			filename=$OPTARG
+		"v")
+			value_filename=$OPTARG
 			;;
         esac
 done
@@ -46,18 +46,14 @@ if [ "$1" == "set" ]; then
 	echo ====== FLUSHALL ====== > $RESULT_FILE_SET
 	$REDIS_CLI_DIR/redis-cli -h 127.0.0.1 -p 9221 <<< "flushall" >> $RESULT_FILE_SET
 	echo >> $RESULT_FILE_SET
-	if [ -z "$filename" ]; then
-		$REDIS_BENCHMARK_DIR/redis-benchmark -h 127.0.0.1 -p 9221 -t set -r 100000000000 -n $requests -c $clients -d $value_size >> $RESULT_FILE_SET
-	else
-		$REDIS_BENCHMARK_DIR/redis-benchmark -h 127.0.0.1 -p 9221 -t set -r 100000000000 -n $requests -c $clients -d $value_size --filename $filename >> $RESULT_FILE_SET
-	fi
+	$REDIS_BENCHMARK_DIR/redis-benchmark -h 127.0.0.1 -p 9221 -t set -n $requests -c $clients -k $key_filename -v $value_filename >> $RESULT_FILE_SET
 	echo ====== COMPACT ====== >> $RESULT_FILE_SET
 	du -h ./$PIKA/db/kv >> $RESULT_FILE_SET
 	$REDIS_CLI_DIR/redis-cli -h 127.0.0.1 -p 9221 <<< "compact sync" >> $RESULT_FILE_SET
 	du -h ./$PIKA/db/kv >> $RESULT_FILE_SET
 	echo >> $RESULT_FILE_SET
 elif [ "$1" == "get" ]; then
-	$REDIS_BENCHMARK_DIR/redis-benchmark -h 127.0.0.1 -p 9221 -t get -r 100000000000 -n $requests -c $clients -d $value_size > $RESULT_FILE_GET
+	$REDIS_BENCHMARK_DIR/redis-benchmark -h 127.0.0.1 -p 9221 -t get -n $requests -c $clients -k $key_filename> $RESULT_FILE_GET
 	
-	$REDIS_BENCHMARK_DIR/redis-benchmark -h 127.0.0.1 -p 9221 -t mget_$mgets -r 10000000000 -n $requests -c $clients -d $value_size >> $RESULT_FILE_GET
+	$REDIS_BENCHMARK_DIR/redis-benchmark -h 127.0.0.1 -p 9221 -t mget_$mgets -n $requests -c $clients -k $key_filename>> $RESULT_FILE_GET
 fi
