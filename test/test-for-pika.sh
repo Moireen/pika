@@ -9,7 +9,7 @@ requests=100000
 clients=50
 value_size=2
 PIKA=pika
-while getopts ":m:n:c:d:h:f:t" optname; do
+while getopts ":m:n:c:k:h:v:t" optname; do
         case "$optname" in
 		"t")
 			PIKA=pika-on-terarkdb
@@ -46,14 +46,14 @@ if [ "$1" == "set" ]; then
 	echo ====== FLUSHALL ====== > $RESULT_FILE_SET
 	$REDIS_CLI_DIR/redis-cli -h 127.0.0.1 -p 9221 <<< "flushall" >> $RESULT_FILE_SET
 	echo >> $RESULT_FILE_SET
-	$REDIS_BENCHMARK_DIR/redis-benchmark -h 127.0.0.1 -p 9221 -t set -n $requests -c $clients -k $key_filename -v $value_filename >> $RESULT_FILE_SET
+	$REDIS_BENCHMARK_DIR/redis-benchmark -h 127.0.0.1 -p 9221 -t set -n $requests -c $clients --key_file $key_filename --value_file $value_filename >> $RESULT_FILE_SET
 	echo ====== COMPACT ====== >> $RESULT_FILE_SET
 	du -h ./$PIKA/db/kv >> $RESULT_FILE_SET
 	$REDIS_CLI_DIR/redis-cli -h 127.0.0.1 -p 9221 <<< "compact sync" >> $RESULT_FILE_SET
 	du -h ./$PIKA/db/kv >> $RESULT_FILE_SET
 	echo >> $RESULT_FILE_SET
 elif [ "$1" == "get" ]; then
-	$REDIS_BENCHMARK_DIR/redis-benchmark -h 127.0.0.1 -p 9221 -t get -n $requests -c $clients -k $key_filename> $RESULT_FILE_GET
+	$REDIS_BENCHMARK_DIR/redis-benchmark -h 127.0.0.1 -p 9221 -t get -n $requests -c $clients --key_file $key_filename> $RESULT_FILE_GET
 	
-	$REDIS_BENCHMARK_DIR/redis-benchmark -h 127.0.0.1 -p 9221 -t mget_$mgets -n $requests -c $clients -k $key_filename>> $RESULT_FILE_GET
+	$REDIS_BENCHMARK_DIR/redis-benchmark -h 127.0.0.1 -p 9221 -t mget_$mgets -n $requests -c $clients --key_file $key_filename>> $RESULT_FILE_GET
 fi
