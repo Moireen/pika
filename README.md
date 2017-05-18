@@ -95,6 +95,9 @@ The RPATH is defined in pika's Makefile
 
 ## Performance
 
+### test of Pika on TerarkDB
+[test of Pika on TerarkDB](https://github.com/Terark/pika/wiki/Performance)
+
 ### test environment
 
 2 same hardware server, one for running pika, the other for running redis-benchmark

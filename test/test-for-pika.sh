@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 if [ -z "$1" ]; then
-	echo usage $0 \[-t\] -m num_mget_keys -n num_requests -c num_clients -k key_filename -v value_filename set/get
+	echo usage $0 \[-t\] -m num_mget_keys -n num_requests -c num_clients set/get
         exit 0
 fi
 
@@ -9,6 +9,9 @@ requests=100000
 clients=50
 value_size=2
 PIKA=pika-without-terarkdb
+key_filename=/datainssd/publicdata/movies/movies_key.txt
+value_filename=/datainssd/publicdata/movies/movies.txt
+key_filename_shuf=/datainssd/publicdata/movies/movies_key_shuf.txt
 while getopts ":m:n:c:k:h:v:t" optname; do
         case "$optname" in
 		"t")
@@ -20,15 +23,9 @@ while getopts ":m:n:c:k:h:v:t" optname; do
                 "c")
                         clients=$OPTARG
                         ;;
-                "k")
-                        key_filename=$OPTARG
-                        ;;
                 "m")
                         mgets=$OPTARG
                         ;;
-		"v")
-			value_filename=$OPTARG
-			;;
         esac
 done
 shift $((OPTIND-1))
@@ -55,7 +52,7 @@ if [ "$1" == "set" ]; then
 	echo >> $RESULT_FILE_SET
 elif [ "$1" == "get" ]; then
 	echo "" > $RESULT_FILE_GET
-	$REDIS_BENCHMARK_DIR/redis-benchmark -h 127.0.0.1 -p 9221 -r $requests -t get -n $requests -c $clients --key_file $key_filename >> $RESULT_FILE_GET
+	$REDIS_BENCHMARK_DIR/redis-benchmark -h 127.0.0.1 -p 9221 -r $requests -t get -n $requests -c $clients --key_file $key_filename_shuf >> $RESULT_FILE_GET
 	
-	$REDIS_BENCHMARK_DIR/redis-benchmark -h 127.0.0.1 -p 9221 -r $requests -t mget_$mgets -n $requests -c $clients --key_file $key_filename >> $RESULT_FILE_GET
+	$REDIS_BENCHMARK_DIR/redis-benchmark -h 127.0.0.1 -p 9221 -r $requests -t mget_$mgets -n $requests -c $clients --key_file $key_filename_shuf >> $RESULT_FILE_GET
 fi

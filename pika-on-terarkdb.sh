@@ -23,4 +23,5 @@ elif [ "$1" == "without" ]; then
 		-c ./conf/pika.conf
 else
 	echo usage $0 with/without
+	exit 0
 fi
