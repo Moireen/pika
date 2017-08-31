@@ -4,10 +4,10 @@ if [ -z "$1" ]; then
 	exit 0
 fi
 
-WITH_TERARK=/home/terark/workspace/terark-zip-rocksdb
-LOCAL_TEMP_DIR=/home/terark/workspace/pika-on-terarkdb/pika-on-terarkdb/localTempDir
+WITH_TERARK=/home/terark/wiklvrain_tmp/terark-zip-rocksdb
+LOCAL_TEMP_DIR=/home/terark/wiklvrain_tmp/task2_pika/pika/pika-on-terarkdb/localTempDir
 export LD_LIBRARY_PATH=$WITH_TERARK/lib:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=/home/terark/workspace/pika-on-terarkdb/third/nemo/output/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/home/terark/wiklvrain_tmp/task2_pika/pika/third/nemo/output/lib:$LD_LIBRARY_PATH
 
 set -x
 
