@@ -1,0 +1,293 @@
+The system is: Linux - 3.10.0-514.16.1.el7.x86_64 - x86_64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /opt/gcc-5.4/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/newssd1/temp/pika/third/googletest/build/CMakeFiles/2.8.12.2/CompilerIdCXX/a.out"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /opt/gcc-5.4/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/newssd1/temp/pika/third/googletest/build/CMakeFiles/2.8.12.2/CompilerIdC/a.out"
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2101071280/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2101071280.dir/build.make CMakeFiles/cmTryCompileExec2101071280.dir/build
+gmake[1]: 进入目录“/newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp”
+/usr/bin/cmake -E cmake_progress_report /newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2101071280.dir/testCXXCompiler.cxx.o
+/opt/gcc-5.4/bin/c++     -o CMakeFiles/cmTryCompileExec2101071280.dir/testCXXCompiler.cxx.o -c /newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec2101071280
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2101071280.dir/link.txt --verbose=1
+/opt/gcc-5.4/bin/c++        CMakeFiles/cmTryCompileExec2101071280.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec2101071280 -rdynamic 
+gmake[1]: 离开目录“/newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp”
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec930064757/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec930064757.dir/build.make CMakeFiles/cmTryCompileExec930064757.dir/build
+gmake[1]: 进入目录“/newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp”
+/usr/bin/cmake -E cmake_progress_report /newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec930064757.dir/CMakeCXXCompilerABI.cpp.o
+/opt/gcc-5.4/bin/c++     -o CMakeFiles/cmTryCompileExec930064757.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec930064757
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec930064757.dir/link.txt --verbose=1
+/opt/gcc-5.4/bin/c++      -v CMakeFiles/cmTryCompileExec930064757.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec930064757 -rdynamic  
+使用内建 specs。
+COLLECT_GCC=/opt/gcc-5.4/bin/c++
+COLLECT_LTO_WRAPPER=/newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/lto-wrapper
+目标：x86_64-unknown-linux-gnu
+配置为：./configure --prefix=/opt/gcc-5.4 --enable-checking=release --enable-languages=c,c++ --disable-multilib --with-gmp=/usr/gmp --with-mpfr=/usr/mpfr --with-mpc=/usr/mpc
+线程模型：posix
+gcc 版本 5.4.0 (GCC) 
+COMPILER_PATH=/newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/:/newssd1/opt/gcc-5.4/bin/../libexec/gcc/
+LIBRARY_PATH=/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/:/newssd1/opt/gcc-5.4/bin/../lib/gcc/:/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec930064757' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/collect2 -plugin /newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/liblto_plugin.so -plugin-opt=/newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0CwNmi.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec930064757 /lib/../lib64/crt1.o /lib/../lib64/crti.o /newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtbegin.o -L/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0 -L/newssd1/opt/gcc-5.4/bin/../lib/gcc -L/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../.. CMakeFiles/cmTryCompileExec930064757.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtend.o /lib/../lib64/crtn.o
+gmake[1]: 离开目录“/newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp”
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/gmake "cmTryCompileExec930064757/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTryCompileExec930064757.dir/build.make CMakeFiles/cmTryCompileExec930064757.dir/build]
+  ignore line: [gmake[1]: 进入目录“/newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp”]
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec930064757.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/opt/gcc-5.4/bin/c++     -o CMakeFiles/cmTryCompileExec930064757.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec930064757]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec930064757.dir/link.txt --verbose=1]
+  ignore line: [/opt/gcc-5.4/bin/c++      -v CMakeFiles/cmTryCompileExec930064757.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec930064757 -rdynamic  ]
+  ignore line: [使用内建 specs。]
+  ignore line: [COLLECT_GCC=/opt/gcc-5.4/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/lto-wrapper]
+  ignore line: [目标：x86_64-unknown-linux-gnu]
+  ignore line: [配置为：./configure --prefix=/opt/gcc-5.4 --enable-checking=release --enable-languages=c,c++ --disable-multilib --with-gmp=/usr/gmp --with-mpfr=/usr/mpfr --with-mpc=/usr/mpc]
+  ignore line: [线程模型：posix]
+  ignore line: [gcc 版本 5.4.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/:/newssd1/opt/gcc-5.4/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/:/newssd1/opt/gcc-5.4/bin/../lib/gcc/:/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec930064757' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/collect2 -plugin /newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/liblto_plugin.so -plugin-opt=/newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0CwNmi.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec930064757 /lib/../lib64/crt1.o /lib/../lib64/crti.o /newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtbegin.o -L/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0 -L/newssd1/opt/gcc-5.4/bin/../lib/gcc -L/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../.. CMakeFiles/cmTryCompileExec930064757.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc0CwNmi.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec930064757] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> ignore
+    arg [/lib/../lib64/crti.o] ==> ignore
+    arg [/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtbegin.o] ==> ignore
+    arg [-L/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0] ==> dir [/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0]
+    arg [-L/newssd1/opt/gcc-5.4/bin/../lib/gcc] ==> dir [/newssd1/opt/gcc-5.4/bin/../lib/gcc]
+    arg [-L/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64] ==> dir [/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../..] ==> dir [/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../..]
+    arg [CMakeFiles/cmTryCompileExec930064757.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtend.o] ==> ignore
+    arg [/lib/../lib64/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0] ==> [/newssd1/opt/gcc-5.4/lib/gcc/x86_64-unknown-linux-gnu/5.4.0]
+  collapse library dir [/newssd1/opt/gcc-5.4/bin/../lib/gcc] ==> [/newssd1/opt/gcc-5.4/lib/gcc]
+  collapse library dir [/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64] ==> [/newssd1/opt/gcc-5.4/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../..] ==> [/newssd1/opt/gcc-5.4/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/newssd1/opt/gcc-5.4/lib/gcc/x86_64-unknown-linux-gnu/5.4.0;/newssd1/opt/gcc-5.4/lib/gcc;/newssd1/opt/gcc-5.4/lib64;/lib64;/usr/lib64;/newssd1/opt/gcc-5.4/lib]
+  implicit fwks: []
+
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2863814883/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2863814883.dir/build.make CMakeFiles/cmTryCompileExec2863814883.dir/build
+gmake[1]: 进入目录“/newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp”
+/usr/bin/cmake -E cmake_progress_report /newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2863814883.dir/testCCompiler.c.o
+/opt/gcc-5.4/bin/cc    -o CMakeFiles/cmTryCompileExec2863814883.dir/testCCompiler.c.o   -c /newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec2863814883
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2863814883.dir/link.txt --verbose=1
+/opt/gcc-5.4/bin/cc       CMakeFiles/cmTryCompileExec2863814883.dir/testCCompiler.c.o  -o cmTryCompileExec2863814883 -rdynamic 
+gmake[1]: 离开目录“/newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp”
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2918985123/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2918985123.dir/build.make CMakeFiles/cmTryCompileExec2918985123.dir/build
+gmake[1]: 进入目录“/newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp”
+/usr/bin/cmake -E cmake_progress_report /newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2918985123.dir/CMakeCCompilerABI.c.o
+/opt/gcc-5.4/bin/cc    -o CMakeFiles/cmTryCompileExec2918985123.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec2918985123
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2918985123.dir/link.txt --verbose=1
+/opt/gcc-5.4/bin/cc     -v CMakeFiles/cmTryCompileExec2918985123.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2918985123 -rdynamic  
+使用内建 specs。
+COLLECT_GCC=/opt/gcc-5.4/bin/cc
+COLLECT_LTO_WRAPPER=/newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/lto-wrapper
+目标：x86_64-unknown-linux-gnu
+配置为：./configure --prefix=/opt/gcc-5.4 --enable-checking=release --enable-languages=c,c++ --disable-multilib --with-gmp=/usr/gmp --with-mpfr=/usr/mpfr --with-mpc=/usr/mpc
+线程模型：posix
+gcc 版本 5.4.0 (GCC) 
+COMPILER_PATH=/newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/:/newssd1/opt/gcc-5.4/bin/../libexec/gcc/
+LIBRARY_PATH=/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/:/newssd1/opt/gcc-5.4/bin/../lib/gcc/:/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2918985123' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/collect2 -plugin /newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/liblto_plugin.so -plugin-opt=/newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOCdw8B.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec2918985123 /lib/../lib64/crt1.o /lib/../lib64/crti.o /newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtbegin.o -L/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0 -L/newssd1/opt/gcc-5.4/bin/../lib/gcc -L/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../.. CMakeFiles/cmTryCompileExec2918985123.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtend.o /lib/../lib64/crtn.o
+gmake[1]: 离开目录“/newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp”
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/gmake "cmTryCompileExec2918985123/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2918985123.dir/build.make CMakeFiles/cmTryCompileExec2918985123.dir/build]
+  ignore line: [gmake[1]: 进入目录“/newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp”]
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec2918985123.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/opt/gcc-5.4/bin/cc    -o CMakeFiles/cmTryCompileExec2918985123.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec2918985123]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2918985123.dir/link.txt --verbose=1]
+  ignore line: [/opt/gcc-5.4/bin/cc     -v CMakeFiles/cmTryCompileExec2918985123.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2918985123 -rdynamic  ]
+  ignore line: [使用内建 specs。]
+  ignore line: [COLLECT_GCC=/opt/gcc-5.4/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/lto-wrapper]
+  ignore line: [目标：x86_64-unknown-linux-gnu]
+  ignore line: [配置为：./configure --prefix=/opt/gcc-5.4 --enable-checking=release --enable-languages=c,c++ --disable-multilib --with-gmp=/usr/gmp --with-mpfr=/usr/mpfr --with-mpc=/usr/mpc]
+  ignore line: [线程模型：posix]
+  ignore line: [gcc 版本 5.4.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/:/newssd1/opt/gcc-5.4/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/:/newssd1/opt/gcc-5.4/bin/../lib/gcc/:/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2918985123' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/collect2 -plugin /newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/liblto_plugin.so -plugin-opt=/newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOCdw8B.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec2918985123 /lib/../lib64/crt1.o /lib/../lib64/crti.o /newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtbegin.o -L/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0 -L/newssd1/opt/gcc-5.4/bin/../lib/gcc -L/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../.. CMakeFiles/cmTryCompileExec2918985123.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/newssd1/opt/gcc-5.4/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.4.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccOCdw8B.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec2918985123] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> ignore
+    arg [/lib/../lib64/crti.o] ==> ignore
+    arg [/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtbegin.o] ==> ignore
+    arg [-L/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0] ==> dir [/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0]
+    arg [-L/newssd1/opt/gcc-5.4/bin/../lib/gcc] ==> dir [/newssd1/opt/gcc-5.4/bin/../lib/gcc]
+    arg [-L/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64] ==> dir [/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../..] ==> dir [/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../..]
+    arg [CMakeFiles/cmTryCompileExec2918985123.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/crtend.o] ==> ignore
+    arg [/lib/../lib64/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0] ==> [/newssd1/opt/gcc-5.4/lib/gcc/x86_64-unknown-linux-gnu/5.4.0]
+  collapse library dir [/newssd1/opt/gcc-5.4/bin/../lib/gcc] ==> [/newssd1/opt/gcc-5.4/lib/gcc]
+  collapse library dir [/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../../../lib64] ==> [/newssd1/opt/gcc-5.4/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/newssd1/opt/gcc-5.4/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.4.0/../../..] ==> [/newssd1/opt/gcc-5.4/lib]
+  implicit libs: [c]
+  implicit dirs: [/newssd1/opt/gcc-5.4/lib/gcc/x86_64-unknown-linux-gnu/5.4.0;/newssd1/opt/gcc-5.4/lib/gcc;/newssd1/opt/gcc-5.4/lib64;/lib64;/usr/lib64;/newssd1/opt/gcc-5.4/lib]
+  implicit fwks: []
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec764943439/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec764943439.dir/build.make CMakeFiles/cmTryCompileExec764943439.dir/build
+gmake[1]: 进入目录“/newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp”
+/usr/bin/cmake -E cmake_progress_report /newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec764943439.dir/CheckIncludeFiles.c.o
+/opt/gcc-5.4/bin/cc    -o CMakeFiles/cmTryCompileExec764943439.dir/CheckIncludeFiles.c.o   -c /newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec764943439
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec764943439.dir/link.txt --verbose=1
+/opt/gcc-5.4/bin/cc       CMakeFiles/cmTryCompileExec764943439.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec764943439 -rdynamic 
+gmake[1]: 离开目录“/newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp”
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2990800159/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2990800159.dir/build.make CMakeFiles/cmTryCompileExec2990800159.dir/build
+gmake[1]: 进入目录“/newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp”
+/usr/bin/cmake -E cmake_progress_report /newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2990800159.dir/CheckFunctionExists.c.o
+/opt/gcc-5.4/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2990800159.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2990800159
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2990800159.dir/link.txt --verbose=1
+/opt/gcc-5.4/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2990800159.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2990800159 -rdynamic -lpthread 
+gmake[1]: 离开目录“/newssd1/temp/pika/third/googletest/build/CMakeFiles/CMakeTmp”
+
+

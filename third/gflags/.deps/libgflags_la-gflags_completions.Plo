@@ -1,0 +1,374 @@
+libgflags_la-gflags_completions.lo: src/gflags_completions.cc \
+ /usr/include/stdc-predef.h src/config.h /usr/include/stdio.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /newssd1/opt/gcc-5.4/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stddef.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /newssd1/opt/gcc-5.4/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h /usr/include/stdlib.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/bits/byteswap-16.h \
+ /usr/include/xlocale.h /usr/include/sys/types.h /usr/include/time.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/alloca.h /usr/include/bits/stdlib-float.h \
+ /usr/include/string.h /newssd1/opt/gcc-5.4/include/c++/5.4.0/set \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_tree.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_algobase.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/c++config.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/os_defines.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/functexcept.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/exception_defines.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/cpp_type_traits.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/ext/type_traits.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/ext/numeric_traits.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_pair.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/move.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/concept_check.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_iterator_base_types.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_iterator_base_funcs.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/debug/debug.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_iterator.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/ptr_traits.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/predefined_ops.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/allocator.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/c++allocator.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/ext/new_allocator.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/new \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/exception \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/atomic_lockfree_defines.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/memoryfwd.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_function.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/backward/binders.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/ext/alloc_traits.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_set.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_multiset.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/range_access.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/string \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stringfwd.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/char_traits.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/postypes.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/cwchar /usr/include/bits/wchar.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/localefwd.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/c++locale.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/clocale /usr/include/locale.h \
+ /usr/include/bits/locale.h /newssd1/opt/gcc-5.4/include/c++/5.4.0/iosfwd \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/cctype /usr/include/ctype.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/ostream_insert.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/cxxabi_forced.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/basic_string.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/ext/atomicity.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/gthr.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
+ /usr/include/bits/timex.h /usr/include/bits/setjmp.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/atomic_word.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/basic_string.tcc \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/utility \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_relops.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/vector \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_construct.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_uninitialized.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_vector.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_bvector.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/vector.tcc \
+ src/gflags/gflags.h src/gflags/gflags_declare.h \
+ /newssd1/opt/gcc-5.4/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stdint.h \
+ /usr/include/stdint.h /usr/include/inttypes.h src/util.h \
+ /usr/include/assert.h /newssd1/opt/gcc-5.4/include/c++/5.4.0/iostream \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/ostream \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/ios \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/ios_base.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/locale_classes.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/locale_classes.tcc \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/stdexcept \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/streambuf \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/streambuf.tcc \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/basic_ios.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/locale_facets.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/cwctype /usr/include/wctype.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/ctype_base.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/streambuf_iterator.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/ctype_inline.h \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/locale_facets.tcc \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/basic_ios.tcc \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/ostream.tcc \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/istream \
+ /newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/istream.tcc \
+ /usr/include/sys/stat.h /usr/include/bits/stat.h
+
+/usr/include/stdc-predef.h:
+
+src/config.h:
+
+/usr/include/stdio.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/newssd1/opt/gcc-5.4/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stddef.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/newssd1/opt/gcc-5.4/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/byteswap-16.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/string.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/set:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_tree.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_algobase.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/c++config.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/os_defines.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/cpu_defines.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/functexcept.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/exception_defines.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/cpp_type_traits.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/ext/type_traits.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/ext/numeric_traits.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_pair.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/move.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/concept_check.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_iterator_base_types.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_iterator_base_funcs.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/debug/debug.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_iterator.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/ptr_traits.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/predefined_ops.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/allocator.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/c++allocator.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/ext/new_allocator.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/new:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/exception:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/atomic_lockfree_defines.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/memoryfwd.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_function.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/backward/binders.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/ext/alloc_traits.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_set.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_multiset.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/range_access.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/string:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stringfwd.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/char_traits.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/postypes.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/cwchar:
+
+/usr/include/bits/wchar.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/localefwd.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/c++locale.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/bits/locale.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/iosfwd:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/cctype:
+
+/usr/include/ctype.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/ostream_insert.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/cxxabi_forced.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/basic_string.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/ext/atomicity.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/gthr.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/timex.h:
+
+/usr/include/bits/setjmp.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/atomic_word.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/basic_string.tcc:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/utility:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_relops.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/vector:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_construct.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_uninitialized.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_vector.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/stl_bvector.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/vector.tcc:
+
+src/gflags/gflags.h:
+
+src/gflags/gflags_declare.h:
+
+/newssd1/opt/gcc-5.4/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/inttypes.h:
+
+src/util.h:
+
+/usr/include/assert.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/iostream:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/ostream:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/ios:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/ios_base.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/locale_classes.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/locale_classes.tcc:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/stdexcept:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/streambuf:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/streambuf.tcc:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/basic_ios.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/locale_facets.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/cwctype:
+
+/usr/include/wctype.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/ctype_base.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/streambuf_iterator.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/ctype_inline.h:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/locale_facets.tcc:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/basic_ios.tcc:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/ostream.tcc:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/istream:
+
+/newssd1/opt/gcc-5.4/include/c++/5.4.0/bits/istream.tcc:
+
+/usr/include/sys/stat.h:
+
+/usr/include/bits/stat.h:

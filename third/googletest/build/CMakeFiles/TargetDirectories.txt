@@ -1,0 +1,2 @@
+/newssd1/temp/pika/third/googletest/build/CMakeFiles/gtest.dir
+/newssd1/temp/pika/third/googletest/build/CMakeFiles/gtest_main.dir
