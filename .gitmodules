@@ -6,7 +6,7 @@
 	url = https://github.com/Qihoo360/pink.git
 [submodule "third/nemo"]
 	path = third/nemo
-	url = git@github.com:Terark/nemo.git
+	url = https://github.com/Terark/nemo.git
 [submodule "third/slash"]
 	path = third/slash
 	url = https://github.com/Terark/slash.git
