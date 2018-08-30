@@ -81,6 +81,10 @@ BLACKWIDOW_PATH = $(THIRD_PATH)/blackwidow
 endif
 BLACKWIDOW = $(BLACKWIDOW_PATH)/lib/libblackwidow$(DEBUG_SUFFIX).a
 
+ifndef TERARKDB_PATH
+TERARKDB_PATH = ../terark-zip-rocksdb/pkg
+endif
+
 ifeq ($(360), 1)
 GLOG := $(GLOG_PATH)/.libs/libglog.a
 endif
@@ -106,12 +110,29 @@ ifeq ($(360),1)
 LIB_PATH += -L$(GLOG_PATH)/.libs
 endif
 
+ifeq ($(USE_DYNAMIC_ROCKSDB),1)
+LDFLAGS += -L$(TERARKDB_PATH)/lib \
+					 -lterark-zip-rocksdb-r \
+					 -lterark-zbs-r \
+					 -lterark-fsa-r \
+					 -lterark-core-r
+else
+LDFLAGS += -Wl,--whole-archive \
+                     ${TERARKDB_PATH}/lib_static/libterark-zip-rocksdb-r.a \
+                     ${TERARKDB_PATH}/lib_static/libterark-zbs-r.a \
+                     ${TERARKDB_PATH}/lib_static/libterark-fsa-r.a \
+                     ${TERARKDB_PATH}/lib_static/libterark-core-r.a \
+		             -Wl,--no-whole-archive
+endif
+
+
 LDFLAGS += $(LIB_PATH) \
 			 		 -lpink$(DEBUG_SUFFIX) \
 			 		 -lslash$(DEBUG_SUFFIX) \
 					 -lblackwidow$(DEBUG_SUFFIX) \
 					 -lrocksdb$(DEBUG_SUFFIX) \
-					 -lglog
+					 -lglog \
+					 -lgomp
 
 # ---------------End Dependences----------------
 
