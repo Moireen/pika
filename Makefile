@@ -110,7 +110,7 @@ ifeq ($(360),1)
 LIB_PATH += -L$(GLOG_PATH)/.libs
 endif
 
-ifeq ($(USE_DYNAMIC_ROCKSDB),1)
+ifeq ($(USE_DYNAMIC_TERARKDB),1)
 LDFLAGS += -L$(TERARKDB_PATH)/lib \
 					 -lterark-zip-rocksdb-r \
 					 -lterark-zbs-r \
