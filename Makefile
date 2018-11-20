@@ -12,8 +12,6 @@ LDFLAGS += -Wl,-rpath=$(RPATH)
 # * DEBUG_LEVEL=0; this is the debug level we use for release. If you're
 # running pika in production you most definitely want to compile pika
 # with debug level 0. To compile with level 0, run `make`,
-
-# Set the default DEBUG_LEVEL to 0
 DEBUG_LEVEL?=0
 
 ifeq ($(MAKECMDGOALS),dbg)
@@ -72,6 +70,25 @@ ROCKSDB_PATH = $(THIRD_PATH)/rocksdb
 endif
 ROCKSDB = $(ROCKSDB_PATH)/librocksdb$(DEBUG_SUFFIX).a
 
+ifndef TERARKDB_PATH
+TERARKDB_PATH = /newssd1/zzz/terark-zip-rocksdb/pkg/terark-zip-rocksdb-Linux-x86_64-g++-4.8-bmi2-1
+endif
+
+ifeq ($(USE_DYNAMIC_TERARKDB),1)
+LDFLAGS += -L$(TERARKDB_PATH)/lib \
+					 -lterark-zip-rocksdb-r \
+					 -lterark-zbs-r \
+					 -lterark-fsa-r \
+					 -lterark-core-r
+else
+LDFLAGS += -Wl,--whole-archive \
+                     ${TERARKDB_PATH}/lib_static/libterark-zip-rocksdb-r.a \
+                     ${TERARKDB_PATH}/lib_static/libterark-zbs-r.a \
+                     ${TERARKDB_PATH}/lib_static/libterark-fsa-r.a \
+                     ${TERARKDB_PATH}/lib_static/libterark-core-r.a \
+		             -Wl,--no-whole-archive
+endif
+
 ifndef GLOG_PATH
 GLOG_PATH = $(THIRD_PATH)/glog
 endif
@@ -88,6 +105,7 @@ endif
 INCLUDE_PATH = -I. \
 							 -I$(SLASH_PATH) \
 							 -I$(PINK_PATH) \
+							 -I$(TERARKDB_PATH) \
 							 -I$(BLACKWIDOW_PATH)/include \
 							 -I$(ROCKSDB_PATH) \
 							 -I$(ROCKSDB_PATH)/include
@@ -111,7 +129,8 @@ LDFLAGS += $(LIB_PATH) \
 			 		 -lslash$(DEBUG_SUFFIX) \
 					 -lblackwidow$(DEBUG_SUFFIX) \
 					 -lrocksdb$(DEBUG_SUFFIX) \
-					 -lglog
+					 -lgomp \
+					 -lglog 
 
 # ---------------End Dependences----------------
 
@@ -122,7 +141,7 @@ LIB_SOURCES :=  $(VERSION_CC) \
 
 #-----------------------------------------------
 
-AM_DEFAULT_VERBOSITY = 0
+AM_DEFAULT_VERBOSITY = 1
 
 AM_V_GEN = $(am__v_GEN_$(V))
 am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))
@@ -152,9 +171,10 @@ CXXFLAGS += -g
 default: all
 
 WARNING_FLAGS = -W -Wextra -Wall -Wsign-compare \
-  							-Wno-unused-parameter -Woverloaded-virtual \
+ 							-Woverloaded-virtual \
 								-Wnon-virtual-dtor -Wno-missing-field-initializers
 
+  							#-Wno-unused-parameter
 ifndef DISABLE_WARNING_AS_ERROR
   WARNING_FLAGS += -Werror
 endif
