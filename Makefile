@@ -71,7 +71,7 @@ endif
 ROCKSDB = $(ROCKSDB_PATH)/librocksdb$(DEBUG_SUFFIX).a
 
 ifndef TERARKDB_PATH
-TERARKDB_PATH = /newssd1/zzz/terark-zip-rocksdb/pkg/terark-zip-rocksdb-Linux-x86_64-g++-4.8-bmi2-1
+TERARKDB_PATH = /newssd1/zzz/terark-zip-rocksdb/pkg/terark-zip-rocksdb-Linux-x86_64-g++-4.8-bmi2-0
 endif
 
 ifeq ($(USE_DYNAMIC_TERARKDB),1)
@@ -141,7 +141,7 @@ LIB_SOURCES :=  $(VERSION_CC) \
 
 #-----------------------------------------------
 
-AM_DEFAULT_VERBOSITY = 1
+AM_DEFAULT_VERBOSITY = 0
 
 AM_V_GEN = $(am__v_GEN_$(V))
 am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))
@@ -179,7 +179,7 @@ ifndef DISABLE_WARNING_AS_ERROR
   WARNING_FLAGS += -Werror
 endif
 
-CXXFLAGS += $(WARNING_FLAGS) $(INCLUDE_PATH) $(PLATFORM_CXXFLAGS) $(OPT)
+CXXFLAGS += $(WARNING_FLAGS) $(INCLUDE_PATH) $(PLATFORM_CXXFLAGS) $(OPT) -march=corei7
 
 LDFLAGS += $(PLATFORM_LDFLAGS)
 
