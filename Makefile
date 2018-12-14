@@ -75,18 +75,18 @@ TERARKDB_PATH = /newssd1/zzz/terark-zip-rocksdb/pkg/terark-zip-rocksdb-Linux-x86
 endif
 
 ifeq ($(USE_DYNAMIC_TERARKDB),0)
-LDFLAGS += -L$(TERARKDB_PATH)/lib \
-					 -lterark-zip-rocksdb-r \
-					 -lterark-zbs-r \
-					 -lterark-fsa-r \
-					 -lterark-core-r
-else
 LDFLAGS += -Wl,--whole-archive \
                      ${TERARKDB_PATH}/lib_static/libterark-zip-rocksdb-r.a \
                      ${TERARKDB_PATH}/lib_static/libterark-zbs-r.a \
                      ${TERARKDB_PATH}/lib_static/libterark-fsa-r.a \
                      ${TERARKDB_PATH}/lib_static/libterark-core-r.a \
 		             -Wl,--no-whole-archive
+else
+LDFLAGS += -L$(TERARKDB_PATH)/lib \
+			-lterark-zip-rocksdb-r \
+			-lterark-zbs-r \
+			-lterark-fsa-r \
+			-lterark-core-r
 endif
 
 ifndef GLOG_PATH
