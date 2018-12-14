@@ -74,7 +74,7 @@ ifndef TERARKDB_PATH
 TERARKDB_PATH = /newssd1/zzz/terark-zip-rocksdb/pkg/terark-zip-rocksdb-Linux-x86_64-g++-4.8-bmi2-0
 endif
 
-ifeq ($(USE_DYNAMIC_TERARKDB),0)
+ifeq ($(USE_STATIC_TERARKDB),1)
 LDFLAGS += -Wl,--whole-archive \
                      ${TERARKDB_PATH}/lib_static/libterark-zip-rocksdb-r.a \
                      ${TERARKDB_PATH}/lib_static/libterark-zbs-r.a \
